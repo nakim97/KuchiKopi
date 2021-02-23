@@ -2,7 +2,7 @@
 This was a portfolio project done for the class, CS 290 at OSU. This project is a travel website for my island, Kuchi Kopi, in the video game, Animal Crossing New Horizon.
 
 ## DEMO 
-https://kuchikopi-nakim97.netlify.app/
+https://kuchikopi.netlify.app/
 
 ## Tech Stack
 HTML, CSS , Javascript , BootStrap , Node.Js , Socket.IO , JQUERY
