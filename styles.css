@@ -1,0 +1,751 @@
+/* Custom Fonts */
+@font-face {
+  font-family: "FinkHeavy";
+  src: url("../fonts/FinkHeavy.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting up responsive + mobile friendly navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(36, 31, 31);
+  position: sticky;
+  top: 0;
+}
+
+.logo h2 {
+  font-size: 3rem;
+  margin: 0.5rem;
+  margin-left: 40px;
+  font-family: FinkHeavy;
+  font-weight: bold;
+  color: #b4ecb4;
+}
+
+.navlinks ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navlinks li {
+  list-style: none;
+  margin-right: 40px;
+  border-radius: 200px;
+  background-color: #8be28b;
+  font-family: "Solway", serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navlinks li:hover {
+  background-color: #b4ecb4;
+  border-radius: 200px;
+  cursor: pointer;
+  transform: translateY(5px);
+}
+.navlinks li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.navlinks {
+  text-align: right;
+}
+.nav-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.nav-btn .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #8be28b;
+  border-radius: 10px;
+}
+
+#circle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #8be28b;
+  clip-path: circle(500px at right 300px);
+  height: 100%;
+  width: 100%;
+  transform: translateX(150px);
+}
+.welcome-container {
+  display: inline-block;
+  float: left;
+  margin-top: 200px;
+  margin-left: 50px;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+#explore-btn {
+  border-radius: 50px;
+  background-color: #8be28b;
+  font-family: "Solway", serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 120px;
+  font-size: 20px;
+  text-align: center;
+  outline: none;
+  border: none;
+  color: white;
+}
+.welcome-container h2 {
+  font-family: FinkHeavy;
+  text-transform: uppercase;
+  font-size: 3vw;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+/* Customizing dots */
+
+.dot,
+.dot2,
+.dot3,
+.dot4,
+.dot5,
+.dot6 {
+  height: 30px;
+  cursor: pointer;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.dot {
+  background-color: #aee1e1;
+}
+.dot2 {
+  background-color: #fcd1d1;
+}
+.dot3 {
+  background-color: #fdec96;
+}
+.dot4 {
+  background-color: #c5d2ef;
+}
+.dot5 {
+  background-color: #ffb7b2;
+}
+.dot6 {
+  background-color: #8be28b;
+}
+
+/* Customizing Explore dots */
+.exdot1,
+.exdot2,
+.exdot3 {
+  height: 30px;
+  cursor: pointer;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+.explore-dot {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.exdot1 {
+  background-color: #9dffb0;
+}
+.exdot2 {
+  background-color: #81f1f7;
+}
+.exdot3 {
+  background-color: #74e0aa;
+}
+/* Setting up Swiper Slide */
+.swiper-container {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+.slide-container {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+  vertical-align: top;
+  margin-top: 50px;
+}
+
+/* Set up Bootstrap carousel */
+.carousel-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.carousel-inner {
+  width: 640px;
+  height: 800px;
+}
+.title {
+  color: #fff;
+  font-family: "Solway", serif;
+  position: absolute;
+  z-index: 12;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.title h2 {
+  font-size: 3vw;
+}
+
+/* Set up Our History Section on Explore Tab */
+.history-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.history-text {
+  margin-left: 50px;
+  text-align: right;
+}
+.history-text h2 {
+  font-family: FinkHeavy;
+  font-size: 50px;
+}
+.history-text p {
+  font-family: "Solway", serif;
+}
+.history-img {
+  flex: 1;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+.history-img img {
+  width: 800px;
+  height: auto;
+}
+/* Setting up Things to do Section */
+
+.row {
+  text-align: center;
+}
+
+.things-text h2 {
+  font-family: FinkHeavy;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.grid-item {
+  align-items: center;
+  margin-bottom: 30px;
+}
+.grid-item h3 {
+  font-family: "Solway", serif;
+  text-align: center;
+}
+.grid-item img {
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.apple,
+.cherry,
+.coconut,
+.orange,
+.pear,
+.peach {
+  border-radius: 50%;
+  background-color: #fcd1d1;
+}
+
+/* Set up  Museum/Pick Fruit/Dining Section on Explore Tab */
+.museum-container,
+.fruit-container,
+.dining-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.museum-text,
+.fruit-text,
+.dining-text {
+  margin-right: 50px;
+  text-align: left;
+  padding-bottom: 50px;
+}
+.museum-text h2,
+.fruit-text h2,
+.dining-text h2 {
+  font-family: FinkHeavy;
+  font-size: 50px;
+}
+.museum-text p,
+.fruit-text p,
+.dining-text p {
+  font-family: "Solway", serif;
+}
+.museum-img,
+.fruit-img,
+.dining-img {
+  flex: 1;
+  box-shadow: 10px 10px 5px #ccc;
+  padding-bottom: 50px;
+}
+
+.museum-img img,
+.fruit-img img,
+.dining-img img {
+  width: 800px;
+  height: auto;
+}
+
+/* Set up Our Camping/Catching Bugs/Fishing Section on Explore Tab */
+.camping-container,
+.bug-container,
+.fish-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.camping-text,
+.bug-text,
+.fish-text {
+  margin-left: 50px;
+  text-align: right;
+}
+.camping-text h2,
+.bug-text h2,
+.fish-text h2 {
+  font-family: FinkHeavy;
+  font-size: 50px;
+}
+.camping-text p,
+.bug-text p,
+.fish-text p {
+  font-family: "Solway", serif;
+}
+.camping-img,
+.bug-img,
+.fish-img {
+  flex: 1;
+  box-shadow: 10px 10px 5px #ccc;
+  margin-right: 30px;
+}
+
+/* Meet page */
+#meet-title h2 {
+  text-transform: uppercase;
+  font-family: FinkHeavy;
+  font-size: 5vw;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  color: #8be28b;
+}
+.row-container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50px;
+}
+
+.column .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.column {
+  float: left;
+  widows: 25%;
+  padding: 20px 25px;
+  margin: auto;
+}
+.card h3 {
+  font-family: "Solway", serif;
+  text-align: center;
+}
+
+.card li {
+  font-family: "Solway", serif;
+}
+.card img {
+  height: 600px;
+  outline: none;
+}
+/* Hover effect */
+
+.card img {
+  transition: all 3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+/* Contact Form */
+.chat h2 {
+  text-align: center;
+  margin-top: 100px;
+  font-family: "Solway", serif;
+  letter-spacing: 10px;
+  font-size: 4vw;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#chat-btn {
+  border-radius: 50px;
+  background-color: #8be28b;
+  font-family: "Solway", serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 150px;
+  font-size: 1.5rem;
+  text-align: center;
+  outline: none;
+  border: none;
+
+  color: white;
+  justify-content: center;
+  margin: 0 auto;
+  display: block;
+}
+.col-sm-4 {
+  margin-top: 50px;
+  font-family: "Solway", serif;
+}
+
+.col-sm-4 i {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.col-8,
+.col-4 {
+  margin-top: 50px;
+}
+.col-8 img {
+  width: 100%;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+#contact-form {
+  padding: 12px;
+  font-family: "Solway", serif;
+  text-align: center;
+  padding-left: 50px;
+}
+
+#contact-form h2 {
+  font-size: 3vw;
+  margin-bottom: 20px;
+}
+#name {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+#email {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 200px;
+  width: 250px;
+  border: 1px solid black;
+}
+#contact-btn {
+  border-radius: 50px;
+  margin-top: 20px;
+  background-color: #8be28b;
+  font-family: "Solway", serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 150px;
+  font-size: 1.5rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  color: white;
+  display: inline-block;
+  justify-content: space-between;
+}
+/* Responsiveness */
+
+@media (max-width: 1283px) {
+  .slide-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  #circle {
+    padding-top: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #8be28b;
+    height: 80%;
+    width: 100%;
+    clip-path: none;
+    border-radius: 40px 40px 40px 40px;
+    transform: translateX(100px);
+  }
+  .welcome-container h2 {
+    font-size: 6vw;
+  }
+  #explore-btn {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  #dots {
+    text-align: center;
+  }
+
+  @media (max-width: 1200px) {
+    /* Responsive nav bar */
+    .nav-btn {
+      display: flex;
+      top: 1.7rem;
+      right: 1rem;
+      width: 2rem;
+      font-weight: bolder;
+    }
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .navlinks {
+      width: 100%;
+      display: none;
+    }
+    .navlinks ul {
+      flex-direction: column;
+      width: 100%;
+    }
+    .navlinks li {
+      text-align: center;
+      margin-left: 30px;
+    }
+
+    .navlinks li a {
+      padding: 0.5rem 1rem;
+    }
+
+    .navlinks.active {
+      display: flex;
+    }
+
+    .navlinks li {
+      margin-bottom: 15px;
+    }
+    /* responsive "our history" section (explore tab) */
+    .history-container {
+      flex-direction: column;
+      min-height: 50px;
+    }
+    .history-img img {
+      margin-top: 50px;
+      flex-basis: 100%;
+      width: 100%;
+    }
+    .history-text {
+      text-align: center;
+      align-content: center;
+      margin: 0;
+    }
+
+    /* responsive museum/fruit/dining section (explore tab) */
+    .museum-container,
+    .fruit-container,
+    .dining-container {
+      flex-direction: column;
+      min-height: 50px;
+      margin-bottom: 30px;
+    }
+    .museum-img img,
+    .fruit-img img,
+    .dining-img img {
+      margin-top: 50px;
+      flex-basis: 100%;
+      width: 100%;
+    }
+    .museum-text,
+    .fruit-text,
+    .dining-text {
+      text-align: center;
+      align-content: center;
+      margin: 0;
+    }
+    .carousel-inner {
+      width: 100%;
+      height: 100%;
+    }
+    /* responsive camping/bugs/fish section (explore tab) */
+    .camping-container,
+    .bug-container,
+    .fish-container {
+      flex-direction: column;
+      min-height: 50px;
+      margin-bottom: 30px;
+    }
+    .camping-img video,
+    .bug-img video,
+    .fish-img video {
+      margin-top: 50px;
+      flex-basis: 100%;
+      width: 100%;
+    }
+    .camping-text,
+    .bug-text,
+    .fish-text {
+      text-align: center;
+      align-content: center;
+      margin: 0;
+      padding-top: 50px;
+    }
+    /* responsive villager cards (meet tab) */
+    .row-container {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    /* Responsive Contact Page */
+    .col-8 img {
+      justify-content: center;
+      text-align: center;
+      margin-left: 100px;
+    }
+
+    .col-4 {
+      justify-content: center;
+      margin-left: 200px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .welcome-container h2 {
+      font-size: 5vw;
+    }
+
+    .title {
+      color: #fff;
+      font-family: "Solway", serif;
+      position: absolute;
+      z-index: 12;
+      top: 25%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .carousel-inner {
+      width: 100%;
+      height: 100%;
+    }
+    .form-container .map img {
+      height: 250px;
+      width: auto;
+      padding-left: 0px;
+      margin-left: 10px;
+    }
+    #chat h4 {
+      font-size: 20px;
+    }
+    #contact-form h2 {
+      font-size: 40px;
+    }
+
+    #circle {
+      padding-top: 50px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: #8be28b;
+      height: 80%;
+      width: 60%;
+      clip-path: none;
+      border-radius: 10px 0 0 10px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 150px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+    }
+    .col-8 img {
+      justify-content: center;
+      text-align: center;
+      margin-left: 80px;
+      width: 100%;
+      height: auto;
+    }
+
+    .col-4 {
+      justify-content: center;
+      margin-left: 100px;
+      text-align: center;
+    }
+  }
+}

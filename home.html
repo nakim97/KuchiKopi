@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kuchi Kopi</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h2>KUCHI KOPI</h2>
+        </div>
+        <a href="#" class="nav-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navlinks">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="meet.html">Meet</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <div class="welcome-container">
+        <h2> Welcome to Kuchi Kopi </h2>
+        <input type="button" id="explore-btn" onclick="location.href='explore.html'" value="EXPLORE" />
+        <br><br>
+        <div id="dots">
+            <span class="dot" onclick="changeColor1()"></span>
+            <span class="dot2" onclick="changeColor2()"></span>
+            <span class="dot3" onclick="changeColor3()"></span>
+            <span class="dot4" onclick="changeColor4()"></span>
+            <span class="dot5" onclick="changeColor5()"></span>
+            <span class="dot6" onclick="changeColor6()"></span>
+        </div>
+
+    </div>
+
+    <!-- Setting up Swiper Slides-->
+    <div class="slide-container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/slide2.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide1.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide3.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide4.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide5.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide6.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide11.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide8.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide9.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide10.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide12.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide7.png">
+                </div>
+
+               
+            </div>
+            <div id="circle"></div>
+        </div>
+       
+
+</body>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+
+</html>

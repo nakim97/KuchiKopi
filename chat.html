@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@500&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <button id="dark-mode" class="dark-mode">
+        <i class="fas fa-moon" onclick="ToggleMode(this)"></i>
+    </button>
+    <div class="chat-wrapper">
+        <header class="chat-header">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </header>
+        <div id="clock"></div>
+        <div id="chat-container"></div>
+        <form id="chat-form">
+            <input type="text" id="chat-input">
+            <button type="submit" id="send-button"><i class="fas fa-leaf"></i></button>
+        </form>
+    </div>
+</body>
+
+<script>
+    var img = ["url(images/day.jpg)","url(images/night.jpg)"],
+        index = 0; 
+
+    document.getElementById("dark-mode").onclick = function(e) {
+        document.body.style.backgroundImage = img[index]; 
+        index = (index + 1) % img.length;
+    }
+    function ToggleMode(x){
+        x.classList.toggle("fa-sun");
+    }
+  
+</script>
+
+</html>
