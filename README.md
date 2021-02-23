@@ -18,6 +18,7 @@ The following features are implemented:
 * [X] Simple Contact Form 
 * [X] Cards that introduce villagers with Hover Effect
 * [X] Chat Room where users can chat with other visitors! (Reference from WebDevSimplified's tutorial and official Socket.IO website) 
+* [X] Chat application implements Dark/Light Mode with changing icon/wallpaper
 
 
 
