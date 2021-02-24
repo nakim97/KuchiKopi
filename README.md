@@ -20,7 +20,11 @@ The following features are implemented:
 * [X] Chat Room where users can chat with other visitors! (Reference from WebDevSimplified's tutorial and official Socket.IO website) 
 * [X] Chat application implements Dark/Light Mode with changing icon/wallpaper
 
-
+## HOW TO RUN THE CHAT APPLICATION
+Make sure that Node.JS is installed
+In the terminal,
+* Enter "npm i" or "npm install"
+* Next "npm run devStart"
 
 ## Photo Credits
 * Photos used in this project are taken from my personal island in the video game, Animal Crossing New Horizons, and are not used for commercial use. 
