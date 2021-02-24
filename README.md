@@ -21,8 +21,7 @@ The following features are implemented:
 * [X] Chat application implements Dark/Light Mode with changing icon/wallpaper
 
 ## HOW TO RUN THE CHAT APPLICATION
-Make sure that Node.JS is installed
-In the terminal,
+Make sure that Node.JS is installed. In the terminal,
 * Enter "npm i" or "npm install"
 * Next "npm run devStart"
 
