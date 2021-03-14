@@ -20,6 +20,8 @@ The following features are implemented:
 * [X] Chat Room where users can chat with other visitors! (Reference from WebDevSimplified's tutorial and official Socket.IO website) 
 * [X] Chat application implements Dark/Light Mode with changing icon/wallpaper
 
+## CHAT DEMO 
+![demo](chat-demo.gif)
 ## HOW TO RUN THE CHAT APPLICATION
 Make sure that Node.JS is installed. In the terminal,
 * Enter "npm i" or "npm install"
