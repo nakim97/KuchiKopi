@@ -1,11 +1,33 @@
 # KuchiKopi Island 
-This was a portfolio project done for the class, CS 290 at OSU. This project is a travel website for my island, Kuchi Kopi, in the video game, Animal Crossing New Horizon.
-
-## DEMO 
 https://kuchikopi.netlify.app/
 
+This was a portfolio project done for the class, CS290- Web Development at OSU. This project is a travel website for my island, Kuchi Kopi, in the video game, Animal Crossing New Horizon.
+
 ## Tech Stack
-HTML, CSS , Javascript , BootStrap , Node.Js , Socket.IO , JQUERY
+HTML, CSS , Javascript , BootStrap , Node.Js , Socket.IO , jQuery
+
+## Walkthrough
+
+- Showcasing landing page featuring touch slider along with color picker
+
+![](kuchikopi1.gif)
+
+- Showcasing Things To Do Section and Image Sliders on Explore Tab
+
+![](kuchikopi2.gif)
+
+- Showcasing Descriptions of Island Activities and Areas of Interest on Explore Tab
+
+![](kuchikopi3.gif)
+
+- Showcasing Villager Info Cards on Meet Tab
+
+![](kuchikopi4.gif)
+
+- Showcasing Chat Application Demo
+
+![](chat-demo.gif)
+
 
 ## Features
 
@@ -20,9 +42,8 @@ The following features are implemented:
 * [X] Chat Room where users can chat with other visitors! (Reference from WebDevSimplified's tutorial and official Socket.IO website) 
 * [X] Chat application implements Dark/Light Mode with changing icon/wallpaper
 
-## CHAT DEMO 
-![demo](chat-demo.gif)
 ## HOW TO RUN THE CHAT APPLICATION
+
 Make sure that Node.JS is installed. In the terminal,
 * Enter "npm i" or "npm install"
 * Next "npm run devStart"
